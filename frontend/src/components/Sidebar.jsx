@@ -291,7 +291,7 @@ const submitResult = async () => {
     toast.loading("Saving your result...");
 
     const resp = await axios.post(
-      "http://localhost:5000/api/result",
+      "https://bytequiz-lc95.onrender.com",
       payload,
       {
         headers: {
