@@ -72,7 +72,7 @@ const StripCard = ({ item }) => {
 };
 
 // --------------------- Main MyResultPage ---------------------
-export default function MyResultPage({ apiBase = "http://localhost:5000" }) {
+export default function MyResultPage({ apiBase = "https://bytequiz-lc95.onrender.com" }) {
   const [results, setResults] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
