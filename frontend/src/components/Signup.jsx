@@ -58,7 +58,7 @@ const Signup = ({ onSignupSuccess = null }) => {
       setSubmitError("");
 
       const response = await axios.post(
-        "http://localhost:5000/api/user/signup",
+        "https://bytequiz-lc95.onrender.com/api/user/signup",
         { name, email, password },
         { headers: { "Content-Type": "application/json" } },
       );
