@@ -46,10 +46,10 @@ const Login = ({ onLoginSuccess = null }) => {
       setSubmitError("");
 
       const response = await axios.post(
-        "http://localhost:5000/api/user/login",
-        { email, password },
-        { headers: { "Content-Type": "application/json" } }
-      );
+  "https://bytequiz-lc95.onrender.com/api/user/login",
+  { email, password },
+  { headers: { "Content-Type": "application/json" } }
+);
 
       // Save token
       localStorage.setItem("authToken", response.data.token);
