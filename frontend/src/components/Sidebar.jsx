@@ -291,16 +291,16 @@ const submitResult = async () => {
     toast.loading("Saving your result...");
 
     const resp = await axios.post(
-      "https://bytequiz-lc95.onrender.com",
-      payload,
-      {
-        headers: {
-          Authorization: `Bearer ${token}`,
-          "Content-Type": "application/json",
-        },
-        timeout: 10000,
-      }
-    );
+  "https://bytequiz-lc95.onrender.com/api/result",
+  payload,
+  {
+    headers: {
+      Authorization: `Bearer ${token}`,
+      "Content-Type": "application/json",
+    },
+    timeout: 10000,
+  }
+);
 
     if (resp.data?.success) {
       toast.success("Result saved!");
